@@ -2,7 +2,6 @@
  * Slider configuration
  * @var {number} interval - Set interval in seconds if @var {bool} autoplay is true
  * @var {bool} autoplay - Set autoplay on mount component
- * @var {string} animationType - Set type of slider animation (slideInLeft, or fade)
  * @var {bool} infinite - Set to infinite slider
  * @var {number} slidesOnPage - Set the count of the slides on the screen (1-4)
  */
