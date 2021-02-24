@@ -9,4 +9,7 @@
 export const interval = 2;
 export const autoplay = false;
 export const infinite = false;
-export const slidesOnPage = 2;
+export let slidesOnPage = -2;
+
+slidesOnPage > 4 ? (slidesOnPage = 4) : slidesOnPage;
+slidesOnPage < 1 ? (slidesOnPage = 1) : slidesOnPage;

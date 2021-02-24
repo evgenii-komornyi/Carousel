@@ -1,4 +1,4 @@
-![image](https://img.shields.io/badge/created%20by-evgenii--komornyi-blue) ![image](https://img.shields.io/badge/npm-v6.14.6-blue) ![image](https://img.shields.io/badge/reactjs-v17.0.1-green) ![image](https://img.shields.io/badge/sass-100%-violet)
+![image](https://img.shields.io/badge/created%20by-evgenii--komornyi-blue) ![image](https://img.shields.io/badge/npm-v6.14.6-blue) ![image](https://img.shields.io/badge/reactjs-v17.0.1-green)
 
 # Carousel
 
@@ -11,7 +11,9 @@ This is a carousel component that was created by HTML5, CSS3 and ReactJS.
 ## Install
 
 `git clone https://github.com/evgenii-komornyi/Carousel.git`
+
 `npm install`
+
 `npm start`
 
 ---
