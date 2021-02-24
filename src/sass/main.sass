@@ -1,0 +1,123 @@
+@import 'parts/color'
+@import 'parts/mixin'
+
+$imp: !important
+$tra: transparent
+
+body
+    background-color: $Black
+
+.slider
+    max-width: 100%
+    height: 50rem
+    margin: 0 auto
+    position: relative
+    overflow: hidden
+
+.slide
+    position: absolute
+    top: 0
+    width: 100%
+    height: 50rem
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: transform 1s
+
+    &.active > img
+        border: 8px solid $Snow $imp
+
+    & > img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    
+    & > .content
+        position: absolute
+        top: 39%
+        width: 100%
+        background-color: rgba($Snow, .5)
+        display: inline-block
+        text-align: center
+        padding: 18px 0
+
+        & > .title
+            font-size: 25px
+
+        & > .desc
+            width: 60%
+            margin-right: auto
+            margin-left: auto
+            line-height: 30px
+
+    & > .article
+        position: relative
+        top: 0
+        width: 500px
+        min-width: 320px
+        text-align: center
+        padding: 20px
+        border: 1px solid $Snow
+        +border-radius(10px)
+
+        & > .title
+            font-size: 25px
+            color: $Snow
+
+        & > .desc
+            color: $Snow
+            letter-spacing: 2px
+
+        // & .active
+        //     display: block
+
+.slider__btn
+    position: absolute
+    top: 50%
+    z-index: 10
+    border: none
+    background: rgba($White, .7)
+    font-family: inherit
+    color: $Black
+    border-radius: 50%
+    height: 5.5rem
+    width: 5.5rem
+    font-size: 3.25rem
+    cursor: pointer
+
+.slider__btn--left
+    left: 6%
+    transform: translate(-50%, -50%)
+
+.slider__btn--right
+    right: 6%
+    transform: translate(50%, -50%)
+
+.dots
+    position: absolute
+    bottom: 5%
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+
+.dots__dot
+    border: none
+    background-color: $LightGrey
+    opacity: 0.7
+    height: 1rem
+    width: 1rem
+    border-radius: 50%
+    margin-right: 1.75rem
+    cursor: pointer
+    transition: all 0.5s
+
+    &:last-child
+        margin: 0
+
+.dots__dot--active
+    background-color: $Black
+    border: 1px solid $Snow
+    opacity: 1
+
+.hidden
+    display: none
